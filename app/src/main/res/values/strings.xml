@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Flix Finder</string>
+    <string name="api_key">7d8e2be61e72b46fdef1aef9000a9a2b</string>
 </resources>
