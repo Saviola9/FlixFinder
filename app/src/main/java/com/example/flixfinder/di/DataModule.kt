@@ -6,6 +6,7 @@ import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import com.example.flixfinder.data.local.LocalDataStore
 import com.example.flixfinder.data.local.PreferencesDataStore
+import com.example.flixfinder.ui.filter.FilterDataStore
 import com.example.flixfinder.ui.settings.LanguageDataStore
 import dagger.Module
 import dagger.Provides
@@ -33,7 +34,9 @@ object DataModule {
         return LanguageDataStore(json, localDataStore)
     }
 
-
+    @Provides
+    @Singleton
+    fun provideFilterDataStore(json : Json, localDataStore: LocalDataStore) : FilterDataStore = FilterDataStore(json, localDataStore)
 
 
 

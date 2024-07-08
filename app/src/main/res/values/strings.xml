@@ -1,4 +1,49 @@
 <resources>
     <string name="app_name">Flix Finder</string>
     <string name="api_key">7d8e2be61e72b46fdef1aef9000a9a2b</string>
+
+    <!-- filter option -->
+    <string name="loading_filter_options">Loading filter options, please wait…</string>
+    <string name="include_adult">Include Adult</string>
+    <string name="title_filter_bottom_sheet">Filter &amp; Sort Movies</string>
+    <string name="reset">RESET</string>
+    <string name="close_content_description">Close</string>
+
+
+
+    <!-- sort by -->
+    <string name="sort_by">Sort By</string>
+    <string name="sort_by_popularity">Popularity</string>
+    <string name="sort_by_vote_count">Vote Count</string>
+    <string name="sort_by_vote_average">Vote Average</string>
+    <string name="sort_by_release_date">Release Date</string>
+    <string name="sort_by_original_title">Original Title</string>
+    <string name="sort_by_revenue">Revenue</string>
+
+    <!-- sort order -->
+    <string name="sort_order">Sort Order</string>
+    <string name="sort_order_descending">Descending</string>
+    <string name="sort_order_ascending">Ascending</string>
+
+    <!-- genres -->
+    <string name="genres">Genres</string>
+
+
+    <!-- movie detail -->
+    <string name="fetching_movie_detail">Fetching Movie Detail</string>
+    <string name="release_date">Release Date</string>
+    <string name="duration">Duration</string>
+    <string name="duration_minutes">%1$s min</string>
+    <string name="vote_average">Vote Avg</string>
+    <string name="votes">Votes</string>
+    <string name="cast">Cast</string>
+    <string name="crew">Crew</string>
+    <string name="images">Images</string>
+    <string name="see_all">See All(%1$d)</string>
+    <string name="production_companies">Production Companies</string>
+    <string name="open_website_content_description">Open Movie Website</string>
+    <string name="backdrop_content_description">Backdrop Image of %1$s</string>
+    <string name="movie_poster_content_description">Poster Image of %1$s</string>
+    <string name="production_company_logo_content_description">Logo of %1$s</string>
+    <string name="person_content_description">Photo of %1$s the %2$s</string>
 </resources>
