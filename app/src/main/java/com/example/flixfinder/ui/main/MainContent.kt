@@ -7,6 +7,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import com.example.flixfinder.ui.movies.MoviesScreen
 import com.example.flixfinder.ui.navigation.Screen
 
 
@@ -20,7 +21,7 @@ fun MainContent() {
     NavHost(navController = navController, startDestination = Screen.MOVIES.route ) {
 
         composable(Screen.MOVIES.route) {
-          /*  MovieScreen*/
+          MoviesScreen()
         }
 
 

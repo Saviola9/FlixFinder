@@ -119,7 +119,7 @@ fun MovieFeature(icon: ImageVector, field: String) {
         Icon(imageVector = icon, contentDescription = null, tint = Color.White, modifier = Modifier.size(13.dp) )
         Text(
             text = field,
-            style = MaterialTheme.typography.titleMedium.copy(
+            style = MaterialTheme.typography.labelLarge.copy(
                 color = Color.White,
                 letterSpacing = 1.5.sp,
                 fontFamily = FontFamily.SansSerif,
@@ -135,7 +135,7 @@ fun MovieFeature(icon: ImageVector, field: String) {
 @Composable
 fun MovieName(name: String) = Text(
     text = name,
-    style = MaterialTheme.typography.titleLarge.copy(
+    style = MaterialTheme.typography.titleMedium.copy(
         color = Color.White,
         letterSpacing = 1.5.sp,
         fontFamily = FontFamily.Serif,

@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 plugins {
     alias(libs.plugins.androidApplication)
 
@@ -37,6 +39,13 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+    
+    tasks.withType<KotlinCompile>().configureEach {
+        kotlinOptions {
+            freeCompilerArgs = freeCompilerArgs + "-Xcontext-receivers"
+        }
+    }
+
     kotlinOptions {
         jvmTarget = "1.8"
     }
@@ -78,5 +87,7 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
     testImplementation(libs.bundles.test)
     androidTestImplementation(libs.bundles.androidTest)
+
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.3")
 
 }
